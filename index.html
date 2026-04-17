@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeeGuard - Preservação das Abelhas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="accessibility-bar" role="toolbar" aria-label="Ferramentas de acessibilidade">
+        <button onclick="changeFontSize('increase')" aria-label="Aumentar fonte">A+</button>
+        <button onclick="changeFontSize('decrease')" aria-label="Diminuir fonte">A-</button>
+        <button onclick="toggleContrast()" aria-label="Alternar Alto Contraste">Contraste</button>
+    </div>
+
+    <header>
+        <nav aria-label="Menu Principal">
+            <div class="logo">BeeGuard 🐝</div>
+            <ul class="nav-links">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#importancia">Importância</a></li>
+                <li><a href="#acoes">Ações</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="container scroll-reveal">
+                <h1 id="hero-title">Proteja as Abelhas, Garanta o Futuro</h1>
+                <p>As abelhas são essenciais para o ecossistema e para a nossa alimentação. Saiba como ajudar.</p>
+                <a href="#acoes" class="btn-primary">Como ajudar?</a>
+            </div>
+        </section>
+
+        <section id="sobre" class="container scroll-reveal" aria-labelledby="carousel-title">
+            <h2 id="carousel-title">Galeria de Espécies</h2>
+            <div class="carousel-container">
+                <div class="carousel" id="bee-carousel" role="region" aria-live="polite">
+                    </div>
+                <div class="carousel-controls">
+                    <button id="prevBtn" aria-label="Anterior">❮</button>
+                    <button id="nextBtn" aria-label="Próximo">❯</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="importancia" class="container scroll-reveal">
+            <h2>Por que elas importam?</h2>
+            <div class="grid-layout" id="importance-grid">
+                </div>
+        </section>
+
+        <section id="acoes" class="container scroll-reveal">
+            <h2>Perguntas Frequentes</h2>
+            <div id="faq-accordion" class="accordion">
+                </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2023 BeeGuard - Projeto de Conscientização Ambiental</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
